@@ -19,16 +19,16 @@ git clone https://github.com/dracula/zsh.git
 ln -s ~/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 
 # Update .zshrc from Reference Repo
-cp .zshrc ~/.zshrc
+cp ~/device-setup/.zshrc ~/.zshrc
 
 # Reload ZSH
 source ~/.zshrc
 
 # Core Apps
-xargs brew install < brew/core_apps
+xargs brew install < ~/device-setup/brew/core_apps
 
 # Sometimes Apps
-xargs brew install < brew/sometimes_apps
+xargs brew install < ~/device-setup/brew/sometimes_apps
 
 # Setup Git Config
 git config --global user.name "Benjamin Western" # Replace with your name
