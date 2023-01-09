@@ -5,8 +5,8 @@ xcode-select —-install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Adds homebrew to the PATH
-echo 'eval "$(/usr/local/bin/brew shellenv)"' >> /Users/$USER/.zprofile
-eval "$(/usr/local/bin/brew shellenv)"
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Update Brew
 brew update
