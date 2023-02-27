@@ -12,6 +12,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Update Brew
 brew update
 
+# Switch Shell to ZSH
+chsh -s $(which zsh)
+
 # Core Apps
 xargs brew install < ~/device-setup/brew/core_apps
 

@@ -41,11 +41,12 @@ We hope that this repository will help you save time and effort in setting up yo
 
 ### What does setup-osx.sh do:
 1. Installs Homebrew
-2. Installs Oh My Zsh
-3. Installs Dracula Theme for Oh My Zsh
-4. Copies over my .zshrc file
-5. Reloads the .zshrc file
-6. Installs my important Homebrew apps:
+2. Changes the default shell to zsh
+3. Installs Oh My Zsh
+4. Installs Dracula Theme for Oh My Zsh
+5. Copies over my .zshrc file
+6. Reloads the .zshrc file
+7. Installs my important Homebrew apps:
     - zsh (Shell)
     - git (Git CLI)
     - gh (GitHub CLI)
@@ -69,7 +70,7 @@ We hope that this repository will help you save time and effort in setting up yo
     - beekeeper-studio (Database GUI - Can be used to connect to MySQL, Postgres, MSSQL, etc)
     - obsidian (Note Taking)
     - utm (Virtual Machine and ISO Emulator)
-7. Setup Git Config (Name, Email, and Default Branch - Replace with your own)
+8. Setup Git Config (Name, Email, and Default Branch - Replace with your own)
 
 ## How to use modify-osx-settings.sh:
 1. Allow the scripts to be run by running `chmod +x modify-osx-settings.sh`
