@@ -5,8 +5,15 @@
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# If you're using an Intel Mac, use this instead
+# echo /usr/local/homebrew/bin/brew >> $HOME/.zprofile
+# eval "$(/usr/local/homebrew/bin/brew shellenv)"
+
 # Update Brew
 brew update
+
+# Core Apps
+xargs brew install < ~/device-setup/brew/core_apps
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -20,9 +27,6 @@ cp ~/device-setup/.zshrc ~/.zshrc
 
 # Reload ZSH
 source ~/.zshrc
-
-# Core Apps
-xargs brew install < ~/device-setup/brew/core_apps
 
 # Setup Git Config
 git config --global user.name "Benjamin Western" # Replace with your name
