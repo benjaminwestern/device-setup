@@ -1,6 +1,3 @@
-# Install Xcode as it is required for Brew
-xcode-select —-install 
-
 # Install Brew using their recommended method
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -27,16 +24,8 @@ source ~/.zshrc
 # Core Apps
 xargs brew install < ~/device-setup/brew/core_apps
 
-# Sometimes Apps
-xargs brew install < ~/device-setup/brew/sometimes_apps
-
 # Setup Git Config
 git config --global user.name "Benjamin Western" # Replace with your name
 git config --global user.email "code@benjaminwestern.dev" # Replace with your email
 git config --global init.defaultBranch main # Set default branch to main
 git config --global color.ui auto # Enable color in terminal
-
-# Install Session Manager Plugin for SSM Proxy and RDP
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
-sudo installer -pkg session-manager-plugin.pkg -target /
-sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
