@@ -36,3 +36,4 @@ git config --global user.name "Benjamin Western" # Replace with your name
 git config --global user.email "code@benjaminwestern.dev" # Replace with your email
 git config --global init.defaultBranch main # Set default branch to main
 git config --global color.ui auto # Enable color in terminal
+git config --global push.autoSetupRemote true # Enable auto push with switched branches
